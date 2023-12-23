@@ -1,0 +1,24 @@
+--utils
+function letab(t, f)
+	for i, k in next, t do
+		if f then
+			i = tostring(i) .. ' (' .. type(i) .. ')'
+			k = tostring(k) .. ' (' .. type(k) .. ')'
+		end
+		
+		print(i, k)
+	end
+	
+	print('------------------------------------------------------')
+end
+
+function utf8(str)
+    return str:gsub('.', function (c)
+		return ('x%X'):format(c:byte())
+    end)
+end
+
+print('Modules System...', (...))
+--
+
+include = ...
