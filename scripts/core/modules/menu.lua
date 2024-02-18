@@ -8,7 +8,7 @@ local table_insert
 
 local include = (...)
 
-local base = include 'lib.base'
+local base = include 'libs.base'
 local hook = include 'hook'
 local user = include 'user'
 
