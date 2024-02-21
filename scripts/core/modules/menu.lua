@@ -77,7 +77,7 @@ hook('menu', function(uid, title, buttonid)
 				table_insert(arg, uid)
 			end
 
-			if button.context ~= false then
+			if button.context == true then
 				table_insert(arg, {data = data, button = button})
 			end
 
