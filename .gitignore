@@ -1,0 +1,10 @@
+/*
+!/.gitignore
+!/scripts/
+!/sys
+/sys/*
+!/sys/lua
+/sys/lua/*
+!/sys/lua/autorun/
+/sys/lua/autorun/*
+!/sys/lua/autorun/run.scripts.main.lua
