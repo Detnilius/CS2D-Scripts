@@ -4,7 +4,7 @@ local error, getmetatable, ipairs, loadfile, next, pcall, print, setmetatable, t
 local string_find, string_gsub, string_lower
 	= string.find, string.gsub, string.lower
 
-local LOOP_MARKER = newproxy()
+local LOOP_MARKER = (newproxy and newproxy()) or {}
 
 local include = {}
 local loaded, paths, debug = {}, {}, {}
